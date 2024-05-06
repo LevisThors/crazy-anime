@@ -50,7 +50,7 @@ export default async function Categories() {
 									);
 								} else {
 									return (
-										<MenubarSub>
+										<MenubarSub key={category.name}>
 											<MenubarSubTrigger>
 												{category.name}
 											</MenubarSubTrigger>

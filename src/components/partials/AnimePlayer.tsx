@@ -39,6 +39,7 @@ export default function AnimePlayer({
 			<div className="flex flex-wrap gap-1.5">
 				{episodes.map((episode) => (
 					<Link
+						key={episode.episodeId}
 						href={episode.episodeUrl ? episode.episodeUrl : ""}
 						className={`px-5 py-2 ${
 							currentEpisode == episode.episodeId ||

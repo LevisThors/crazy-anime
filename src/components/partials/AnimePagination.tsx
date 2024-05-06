@@ -71,7 +71,7 @@ export default function AnimePagination({
 								if (!lastPage) return;
 								if (currentPage + forwardPage < lastPage) {
 									return (
-										<PaginationItem>
+										<PaginationItem key={currentPage}>
 											<PaginationLink
 												href={currentUrl.replace(
 													`page=${currentPage}`,

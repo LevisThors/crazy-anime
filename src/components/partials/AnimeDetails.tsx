@@ -43,7 +43,7 @@ export default function AnimeDetails({
 				</div>
 				<div className="max-h-40 flex flex-col flex-wrap text-sm w-fit gap-x-5 gap-y-1">
 					{attributes.map((attr) => (
-						<div className="flex w-fit gap-0.5">
+						<div className="flex w-fit gap-0.5" key={attr.key}>
 							<span className="font-bold">{attr.key}</span>
 							<span>{attr.value}</span>
 						</div>
